@@ -1,0 +1,32 @@
+{
+  "Games": [
+    {
+      "playName": "Bubble Shooter",
+      "playImage": "https://cdn.mglgamez.com/storage/import/games/20210106_112344_I3UMv.jpeg",
+      "playTimeinMinute": "1",
+      "playReward": "100",
+      "playURL": "https://1105.go.mglgamez.com/playgame/bubble-shooter51"
+    },
+    {
+      "playName": "Don't Crash",
+      "playImage": "https://cdn.mglgamez.com/storage/import/games/20210106_112118_j1jTl.png",
+      "playTimeinMinute": "2",
+      "playReward": "50",
+      "playURL": "https://1105.go.mglgamez.com/playgame/donot-crash2"
+    },
+    {
+      "playName": "Bubble Shooter",
+      "playImage": "https://cdn.mglgamez.com/storage/import/games/20210106_112344_I3UMv.jpeg",
+      "playTimeinMinute": "1",
+      "playReward": "100",
+      "playURL": "https://1105.go.mglgamez.com/playgame/bubble-shooter51"
+    },
+    {
+      "playName": "Don't Crash",
+      "playImage": "https://cdn.mglgamez.com/storage/import/games/20210106_112118_j1jTl.png",
+      "playTimeinMinute": "2",
+      "playReward": "50",
+      "playURL": "https://1105.go.mglgamez.com/playgame/donot-crash2"
+    }
+  ]
+}
