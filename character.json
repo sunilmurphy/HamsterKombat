@@ -1,34 +1,44 @@
 {
   "hmstr_character": [
     {
+      "character_id": "1",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/mine_char.webp",
       "character_name": "Marta",
       "character_desc": "Marta is the kind-hearted hamster who loves helping others and always has a warn smile for everyone",
-      "character_reward": "1"
+      "character_reward": "1",
+      "isUnlocked": false
     },
     {
+      "character_id": "2",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/mine_char.webp",
       "character_name": "Homie",
       "character_desc": "Homie is the loyal freind who enjoys spending time with his buddies and always knows how to make everyone feel at home",
-      "character_reward": "2"
+      "character_reward": "2",
+      "isUnlocked": false
     },
     {
+      "character_id": "3",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/mine_char.webp",
       "character_name": "Fightly",
       "character_desc": "Fightly is full of energy and enthusiasm, always up for a fun adventure or a new game with freinds",
-      "character_reward": "3"
+      "character_reward": "3",
+      "isUnlocked": true
     },
     {
+      "character_id": "4",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/mine_char.webp",
       "character_name": "Rockstar",
       "character_desc": "Rockstar loves music and is always ready to play a tune or sing a song to lift everyone's spirits",
-      "character_reward": "4"
+      "character_reward": "4",
+      "isUnlocked": true
     },
     {
+      "character_id": "5",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/mine_char.webp",
       "character_name": "Fanky",
       "character_desc": "Fanky is the life of the party, bringing joy and laughter with flunky dance moves and a great sense of humor",
-      "character_reward": "5"
+      "character_reward": "5",
+      "isUnlocked": false
     }
   ]
 }
