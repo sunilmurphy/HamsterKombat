@@ -1,32 +1,32 @@
 {
-  "Games": [
-    {
-      "playName": "Bubble Shooter",
-      "playImage": "https://cdn.mglgamez.com/storage/import/games/20210106_112344_I3UMv.jpeg",
-      "playTimeinMinute": "1",
-      "playReward": "100",
-      "playURL": "https://1105.go.mglgamez.com/"
-    },
-    {
-      "playName": "Don't Crash",
-      "playImage": "https://cdn.mglgamez.com/storage/import/games/20210106_112118_j1jTl.png",
-      "playTimeinMinute": "2",
-      "playReward": "50",
-      "playURL": "https://1105.go.mglgamez.com/"
-    },
-    {
-      "playName": "Bubble Shooter",
-      "playImage": "https://cdn.mglgamez.com/storage/import/games/20210106_112344_I3UMv.jpeg",
-      "playTimeinMinute": "1",
-      "playReward": "100",
-      "playURL": "https://1105.go.mglgamez.com/"
-    },
-    {
-      "playName": "Don't Crash",
-      "playImage": "https://cdn.mglgamez.com/storage/import/games/20210106_112118_j1jTl.png",
-      "playTimeinMinute": "2",
-      "playReward": "50",
-      "playURL": "https://1105.go.mglgamez.com/"
-    }
-  ]
+    "playground":[
+        {
+            "game_name":"Hamster Captcha",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/hamstercaptcha.png"
+        },
+        {
+            "game_name":"Quick Reflex",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/quickreflex.png"
+        },
+        {
+            "game_name":"Tap The Shape",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/taptheshape.png"
+        },
+        {
+            "game_name":"Memory Match",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/memorymatch.png"
+        },
+        {
+            "game_name":"Sequence Game",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/sequencegame.png"
+        },
+        {
+            "game_name":"Odd One Out",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/oddoneout.png"
+        },
+        {
+            "game_name":"Word Scramble",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/wordscramble.png"
+        }
+    ]
 }
