@@ -28,5 +28,15 @@
             "game_name":"Word Scramble",
             "game_icon":"https://sunilmurphy.github.io/HamsterKombat/wordscramble.png"
         }
-    ]
+    ],
+    "tasks":[
+      {
+            "game_name":"PubScale",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/oddoneout.png"
+        },
+        {
+            "game_name":"Adjump",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/wordscramble.png"
+        }
+        ]
 }
