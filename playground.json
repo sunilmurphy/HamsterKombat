@@ -31,12 +31,16 @@
     ],
     "tasks":[
       {
-            "game_name":"PubScale",
-            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/oddoneout.png"
+            "game_name":"Torox",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/torox.png"
         },
         {
-            "game_name":"Adjump",
-            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/wordscramble.png"
+            "game_name":"BitLabs",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/bitlabs.png"
+        },
+        {
+            "game_name":"TimeWall",
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/timewall.png"
         }
         ]
 }
