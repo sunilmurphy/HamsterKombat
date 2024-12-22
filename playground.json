@@ -32,15 +32,18 @@
     "tasks":[
       {
             "game_name":"PubScale",
-            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/pubscale.png"
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/pubscale.png",
+            "game_action":"null"
         },
         {
             "game_name":"Torox",
-            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/torex.png"
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/torex.png",
+            "game_action":"null"
         },
         {
             "game_name":"TimeWall",
-            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/timewall.png"
+            "game_icon":"https://sunilmurphy.github.io/HamsterKombat/timewall.png",
+            "game_action":"null"
         }
         ]
 }
