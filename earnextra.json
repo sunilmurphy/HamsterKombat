@@ -5,35 +5,35 @@
             "earn_seconds":30
         },
         {
-            "earn_desc":200,
+            "earn_coin":200,
             "earn_seconds":45
         },
         {
-            "earn_desc":300,
+            "earn_coin":300,
             "earn_seconds":60
         },
         {
-            "earn_desc":400,
+            "earn_coin":400,
             "earn_seconds":75
         },
         {
-            "earn_desc":500,
+            "earn_coin":500,
             "earn_seconds":90
         },
         {
-            "earn_desc":1000,
+            "earn_coin":1000,
             "earn_seconds":105
         },
         {
-            "earn_desc":2000,
+            "earn_coin":2000,
             "earn_seconds":120
         },
         {
-            "earn_desc":3000,
+            "earn_coin":3000,
             "earn_seconds":135
         },
         {
-            "earn_desc":5000,
+            "earn_coin":5000,
             "earn_seconds":150
         }
     ]
