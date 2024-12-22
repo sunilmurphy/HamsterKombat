@@ -1,28 +1,40 @@
 {
     "earnextra":[
         {
-            "earn_desc":"Click collect coins stay 30 seconds & Earn 100 Coin",
+            "earn_coin":100,
             "earn_seconds":30
         },
         {
-            "earn_desc":"Click collect coins stay 45 seconds & Earn 200 Coin",
+            "earn_desc":200,
             "earn_seconds":45
         },
         {
-            "earn_desc":"Click collect coins stay 60 seconds & Earn 300 Coin",
+            "earn_desc":300,
             "earn_seconds":60
         },
         {
-            "earn_desc":"Click collect coins stay 75 seconds & Earn 400 Coin",
+            "earn_desc":400,
             "earn_seconds":75
         },
         {
-            "earn_desc":"Click collect coins stay 90 seconds & Earn 500 Coin",
+            "earn_desc":500,
             "earn_seconds":90
         },
         {
-            "earn_desc":"Click collect coins stay 105 seconds & Earn 1000 Coin",
+            "earn_desc":1000,
             "earn_seconds":105
+        },
+        {
+            "earn_desc":2000,
+            "earn_seconds":120
+        },
+        {
+            "earn_desc":3000,
+            "earn_seconds":135
+        },
+        {
+            "earn_desc":5000,
+            "earn_seconds":150
         }
     ]
 }
