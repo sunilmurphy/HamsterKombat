@@ -1,13 +1,6 @@
 {
   "hmstr_character": [
     {
-      "character_id": "1",
-      "character_img": "https://sunilmurphy.github.io/HamsterKombat/mine_char.webp",
-      "character_name": "Default",
-      "character_desc": "Your league's default skin",
-      "character_reward": "1"
-    },
-    {
       "character_id": "2",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img2.png",
       "character_name": "Marta",
