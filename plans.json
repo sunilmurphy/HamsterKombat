@@ -17,94 +17,92 @@
       "key": "20xspeedmonth"
     }
   ],
-  "purchase_plans": {
-    "1Month": {
-      "name": "1 month",
-      "plantext": "Longer duration is cheaper",
-      "plans": [
-        {
-          "speed": "5",
-          "key": "5xspeedmonth"
-        },
-        {
-          "speed": "10",
-          "key": "10xspeedmonth"
-        },
-        {
-          "speed": "15",
-          "key": "15xspeedmonth"
-        },
-        {
-          "speed": "20",
-          "key": "20xspeedmonth"
-        }
-      ]
-    },
-    "3Month": {
-      "name": "3 month",
-      "plantext": "25% discount",
-      "plans": [
-        {
-          "speed": "5",
-          "key": "5xspeedmonth"
-        },
-        {
-          "speed": "10",
-          "key": "10xspeedmonth"
-        },
-        {
-          "speed": "15",
-          "key": "15xspeedmonth"
-        },
-        {
-          "speed": "20",
-          "key": "20xspeedmonth"
-        }
-      ]
-    },
-    "6Month": {
-      "name": "6 month",
-      "plantext": "33% discount",
-      "plans": [
-        {
-          "speed": "5",
-          "key": "5xspeedmonth"
-        },
-        {
-          "speed": "10",
-          "key": "10xspeedmonth"
-        },
-        {
-          "speed": "15",
-          "key": "15xspeedmonth"
-        },
-        {
-          "speed": "20",
-          "key": "20xspeedmonth"
-        }
-      ]
-    },
-    "12Month": {
-      "name": "12 month",
-      "plantext": "50% discount",
-      "plans": [
-        {
-          "speed": "5",
-          "key": "5xspeedmonth"
-        },
-        {
-          "speed": "10",
-          "key": "10xspeedmonth"
-        },
-        {
-          "speed": "15",
-          "key": "15xspeedmonth"
-        },
-        {
-          "speed": "20",
-          "key": "20xspeedmonth"
-        }
-      ]
-    }
+  "1Month": {
+    "name": "1 month",
+    "plantext": "Longer duration is cheaper",
+    "plans": [
+      {
+        "speed": "5",
+        "key": "5xspeedmonth"
+      },
+      {
+        "speed": "10",
+        "key": "10xspeedmonth"
+      },
+      {
+        "speed": "15",
+        "key": "15xspeedmonth"
+      },
+      {
+        "speed": "20",
+        "key": "20xspeedmonth"
+      }
+    ]
+  },
+  "3Month": {
+    "name": "3 month",
+    "plantext": "25% discount",
+    "plans": [
+      {
+        "speed": "5",
+        "key": "5xspeedmonth"
+      },
+      {
+        "speed": "10",
+        "key": "10xspeedmonth"
+      },
+      {
+        "speed": "15",
+        "key": "15xspeedmonth"
+      },
+      {
+        "speed": "20",
+        "key": "20xspeedmonth"
+      }
+    ]
+  },
+  "6Month": {
+    "name": "6 month",
+    "plantext": "33% discount",
+    "plans": [
+      {
+        "speed": "5",
+        "key": "5xspeedmonth"
+      },
+      {
+        "speed": "10",
+        "key": "10xspeedmonth"
+      },
+      {
+        "speed": "15",
+        "key": "15xspeedmonth"
+      },
+      {
+        "speed": "20",
+        "key": "20xspeedmonth"
+      }
+    ]
+  },
+  "12Month": {
+    "name": "12 month",
+    "plantext": "50% discount",
+    "plans": [
+      {
+        "speed": "5",
+        "key": "5xspeedmonth"
+      },
+      {
+        "speed": "10",
+        "key": "10xspeedmonth"
+      },
+      {
+        "speed": "15",
+        "key": "15xspeedmonth"
+      },
+      {
+        "speed": "20",
+        "key": "20xspeedmonth"
+      }
+    ]
   }
 }
