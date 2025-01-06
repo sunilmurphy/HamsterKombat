@@ -24,18 +24,6 @@
       {
         "speed": "5",
         "key": "5xspeedmonth"
-      },
-      {
-        "speed": "10",
-        "key": "10xspeedmonth"
-      },
-      {
-        "speed": "15",
-        "key": "15xspeedmonth"
-      },
-      {
-        "speed": "20",
-        "key": "20xspeedmonth"
       }
     ]
   },
@@ -50,14 +38,6 @@
       {
         "speed": "10",
         "key": "10xspeedmonth"
-      },
-      {
-        "speed": "15",
-        "key": "15xspeedmonth"
-      },
-      {
-        "speed": "20",
-        "key": "20xspeedmonth"
       }
     ]
   },
@@ -76,10 +56,6 @@
       {
         "speed": "15",
         "key": "15xspeedmonth"
-      },
-      {
-        "speed": "20",
-        "key": "20xspeedmonth"
       }
     ]
   },
