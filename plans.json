@@ -23,7 +23,11 @@
     "plans": [
       {
         "speed": "5",
-        "key": "5xspeedmonth"
+        "key": "primesubscription"
+      },
+      {
+        "speed": "15",
+        "key": "elitesubscription"
       }
     ]
   },
