@@ -1,15 +1,43 @@
 {
   "subscription_plans": [
     {
-      "speed": "5",
+      "speed": "10",
       "key": "primesubscription"
     },
     {
-      "speed": "10",
+      "speed": "20",
       "key": "elitesubscription"
     },
     {
-      "speed": "15",
+      "speed": "30",
+      "key": "ultrapro"
+    },
+    {
+      "speed": "40",
+      "key": "ultrapro"
+    },
+    {
+      "speed": "50",
+      "key": "ultrapro"
+    },
+    {
+      "speed": "60",
+      "key": "ultrapro"
+    },
+    {
+      "speed": "70",
+      "key": "ultrapro"
+    },
+    {
+      "speed": "80",
+      "key": "ultrapro"
+    },
+    {
+      "speed": "90",
+      "key": "ultrapro"
+    },
+    {
+      "speed": "100",
       "key": "ultrapro"
     }
   ],
