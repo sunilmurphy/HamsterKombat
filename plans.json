@@ -2,15 +2,15 @@
   "subscription_plans": [
     {
       "speed": "10",
-      "key": "10xsubscribe"
+      "key": "primesubscription"
     },
     {
       "speed": "20",
-      "key": "20xsubscribe"
+      "key": "elitesubscription"
     },
     {
       "speed": "30",
-      "key": "30xsubscribe"
+      "key": "ultrapro"
     },
     {
       "speed": "40",
