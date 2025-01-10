@@ -19,26 +19,6 @@
     {
       "speed": "50",
       "key": "50xsubscribe"
-    },
-    {
-      "speed": "60",
-      "key": "60xsubscribe"
-    },
-    {
-      "speed": "70",
-      "key": "70xsubscribe"
-    },
-    {
-      "speed": "80",
-      "key": "80xsubscribe"
-    },
-    {
-      "speed": "90",
-      "key": "90xsubscribe"
-    },
-    {
-      "speed": "100",
-      "key": "100xsubscribe"
     }
   ],
   "1Month": {
