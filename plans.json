@@ -2,43 +2,43 @@
   "subscription_plans": [
     {
       "speed": "10",
-      "key": "primesubscription"
+      "key": "10xsubscribe"
     },
     {
       "speed": "20",
-      "key": "elitesubscription"
+      "key": "20xsubscribe"
     },
     {
       "speed": "30",
-      "key": "ultrapro"
+      "key": "30xsubscribe"
     },
     {
       "speed": "40",
-      "key": "ultrapro"
+      "key": "40xsubscribe"
     },
     {
       "speed": "50",
-      "key": "ultrapro"
+      "key": "50xsubscribe"
     },
     {
       "speed": "60",
-      "key": "ultrapro"
+      "key": "60xsubscribe"
     },
     {
       "speed": "70",
-      "key": "ultrapro"
+      "key": "70xsubscribe"
     },
     {
       "speed": "80",
-      "key": "ultrapro"
+      "key": "80xsubscribe"
     },
     {
       "speed": "90",
-      "key": "ultrapro"
+      "key": "90xsubscribe"
     },
     {
       "speed": "100",
-      "key": "ultrapro"
+      "key": "100xsubscribe"
     }
   ],
   "1Month": {
