@@ -100,16 +100,24 @@
     "plantext": "33% discount",
     "plans": [
       {
-        "speed": "5",
+        "speed": "10",
         "key": "5xspeed6month"
       },
       {
-        "speed": "10",
-        "key": "10xspeedmonth"
+        "speed": "20",
+        "key": "$672"
       },
       {
-        "speed": "15",
-        "key": "15xspeedmonth"
+        "speed": "30",
+        "key": "$992"
+      },
+      {
+        "speed": "40",
+        "key": "$1152"
+      },
+      {
+        "speed": "50",
+        "key": "$1280"
       }
     ]
   },
@@ -118,20 +126,24 @@
     "plantext": "50% discount",
     "plans": [
       {
-        "speed": "5",
-        "key": "5xspeedmonth"
-      },
-      {
         "speed": "10",
-        "key": "10xspeedmonth"
-      },
-      {
-        "speed": "15",
-        "key": "15xspeedmonth"
+        "key": "$704"
       },
       {
         "speed": "20",
-        "key": "20xspeedmonth"
+        "key": "$1344"
+      },
+      {
+        "speed": "30",
+        "key": "$1984"
+      },
+      {
+        "speed": "40",
+        "key": "$2304"
+      },
+      {
+        "speed": "50",
+        "key": "$2560"
       }
     ]
   }
