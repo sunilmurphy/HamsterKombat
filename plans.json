@@ -48,12 +48,24 @@
     "plantext": "Longer duration is cheaper",
     "plans": [
       {
-        "speed": "5",
-        "key": "primesubscription"
+        "speed": "10",
+        "key": "5xspeed1month"
       },
       {
-        "speed": "15",
-        "key": "elitesubscription"
+        "speed": "20",
+        "key": "10xspeed1month"
+      },
+      {
+        "speed": "30",
+        "key": "30xspeed1month"
+      },
+      {
+        "speed": "40",
+        "key": "40xspeed1month"
+      },
+      {
+        "speed": "50",
+        "key": "50xspeed1month"
       }
     ]
   },
@@ -63,11 +75,11 @@
     "plans": [
       {
         "speed": "5",
-        "key": "5xspeedmonth"
+        "key": "5xspeed3month"
       },
       {
         "speed": "10",
-        "key": "10xspeedmonth"
+        "key": "10xspeed3month"
       }
     ]
   },
@@ -77,7 +89,7 @@
     "plans": [
       {
         "speed": "5",
-        "key": "5xspeedmonth"
+        "key": "5xspeed6month"
       },
       {
         "speed": "10",
