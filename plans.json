@@ -74,12 +74,24 @@
     "plantext": "25% discount",
     "plans": [
       {
-        "speed": "5",
+        "speed": "10",
         "key": "5xspeed3month"
       },
       {
-        "speed": "10",
+        "speed": "20",
         "key": "10xspeed3month"
+      },
+      {
+        "speed": "30",
+        "key": "496"
+      },
+      {
+        "speed": "40",
+        "key": "576"
+      },
+      {
+        "speed": "50",
+        "key": "640"
       }
     ]
   },
