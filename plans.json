@@ -3,44 +3,44 @@
     {
       "speed": "10",
       "key": "primesubscription",
-      "3month": "132",
-      "6month": "228",
-      "12month": "352"
+      "month3": "132",
+      "month6": "228",
+      "month12": "352"
     },
     {
       "speed": "20",
       "key": "elitesubscription",
-      "3month": "252",
-      "6month": "436",
-      "12month": "672"
+      "month3": "252",
+      "month6": "436",
+      "month12": "672"
     },
     {
       "speed": "30",
       "key": "ultrapro",
-      "3month": "372",
-      "6month": "644",
-      "12month": "992"
+      "month3": "372",
+      "month6": "644",
+      "month12": "992"
     },
     {
       "speed": "40",
       "key": "40xsubscribe",
-      "3month": "432",
-      "6month": "748",
-      "12month": "1152"
+      "month3": "432",
+      "month6": "748",
+      "month12": "1152"
     },
     {
       "speed": "50",
       "key": "50xsubscribe",
-      "3month": "480",
-      "6month": "832",
-      "12month": "1280"
+      "month3": "480",
+      "month6": "832",
+      "month12": "1280"
     },
     {
       "speed": "60",
       "key": "60xsubscribe",
-      "3month": "612",
-      "6month": "1060",
-      "12month": "1632"
+      "month3": "612",
+      "month6": "1060",
+      "month12": "1632"
     }
   ],
   "1Month": {
