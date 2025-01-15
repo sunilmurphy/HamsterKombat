@@ -5,266 +5,342 @@
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img2.png",
       "character_name": "Marta",
       "character_desc": "Marta is the kind-hearted hamster who loves helping others and always has a warm smile for everyone",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3896,
+      "character_activeusers": 1167
     },
     {
       "character_id": "3",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img3.png",
       "character_name": "Homie",
       "character_desc": "Homie is the loyal friend who enjoys spending time with his buddies and always knows how to make everyone feel at home",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4738,
+      "character_activeusers": 865
     },
     {
       "character_id": "4",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img4.png",
       "character_name": "Fighty",
       "character_desc": "Fighty is full of energy and enthusiasm, always up for a fun adventure or a new game with friends",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3425,
+      "character_activeusers": 1432
     },
     {
       "character_id": "5",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img5.png",
       "character_name": "Rockstar",
       "character_desc": "Rockstar loves music and is always ready to play a tune or sing a song to lift everyone's ",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4619,
+      "character_activeusers": 792
     },
     {
       "character_id": "6",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img6.png",
       "character_name": "Fanky",
       "character_desc": "Fanky is the life of the party, bringing joy and laughter with funky dance moves and a great sense of humor",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3178,
+      "character_activeusers": 1294
     },
     {
       "character_id": "7",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img7.png",
       "character_name": "Punky",
       "character_desc": "Punky is cool and edgy, with a unique style and a knack for turning heads wherever they go",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4230,
+      "character_activeusers": 948
     },
     {
       "character_id": "8",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img8.png",
       "character_name": "Groovy",
       "character_desc": "Groovy is smooth and stylish, always on top of the latest trends and loves to spread good vibes",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3684,
+      "character_activeusers": 1087
     },
     {
       "character_id": "9",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img9.png",
       "character_name": "Funny",
       "character_desc": "Funny is the comedian of the group, always making everyone laugh with jokes and playful antics",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4017,
+      "character_activeusers": 1345
     },
     {
       "character_id": "10",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img10.png",
       "character_name": "Hamstervestor",
       "character_desc": "Hamstervestor is the entrepreneurial spirit, always coming up with new ideas and ways to make things better for everyone",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4946,
+      "character_activeusers": 1193
     },
     {
       "character_id": "11",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img11.png",
       "character_name": "Busy",
       "character_desc": "Busy is always active and loves staying productive, whether organizing events or helping friends with their tasks",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4521,
+      "character_activeusers": 1347
     },
     {
       "character_id": "12",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img12.png",
       "character_name": "Smarty",
       "character_desc": "Smarty loves learning and sharing knowledge, always curious and eager to explore new topics and ideas",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3987,
+      "character_activeusers": 1123
     },
     {
       "character_id": "13",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img13.png",
       "character_name": "Spacy",
       "character_desc": "Spacy is the adventurous astronaut who loves exploring the far reaches of the galaxy, always dreaming of new planets to visit and stars to study",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3124,
+      "character_activeusers": 854
     },
     {
       "character_id": "14",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img14.png",
       "character_name": "Bravy",
       "character_desc": "Bravy is courageous and inspiring, always encouraging friends to try new things and be their best selves",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4876,
+      "character_activeusers": 1412
     },
     {
       "character_id": "15",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img15.png",
       "character_name": "Genius",
       "character_desc": "Genius is incredibly smart and inventive, always tinkering with new projects and solving puzzles",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4243,
+      "character_activeusers": 998
     },
     {
       "character_id": "16",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img16.png",
       "character_name": "Wisy",
       "character_desc": "Wisy is wise and thoughtful, offering great advice and guidance to friends in need",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3659,
+      "character_activeusers": 715
     },
     {
       "character_id": "17",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img17.png",
       "character_name": "Gravity",
       "character_desc": "Gravity is the expert on all things related to the forces of space, keeping everyone grounded with a deep understanding of how the universe holds together",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4012,
+      "character_activeusers": 865
     },
     {
       "character_id": "18",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img18.png",
       "character_name": "Appolo",
       "character_desc": "Appolo is the mission commander with a passion for space exploration and discovery, always ready to lead the crew on exciting interstellar journeys",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4932,
+      "character_activeusers": 1429
     },
     {
       "character_id": "19",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img19.png",
       "character_name": "Bron",
       "character_desc": "Bron is a basketball legend in the making. With unmatched athleticism and a strategic mind, Bron leads the team with charisma and skill",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3528,
+      "character_activeusers": 798
     },
     {
       "character_id": "20",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img20.png",
       "character_name": "Rafa",
       "character_desc": "Rafa is a fierce competitor. With a never-give-up attitude and a powerful forehand, Rafa excels in tennis, winning matches with determination and skill",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4187,
+      "character_activeusers": 1342
     },
     {
       "character_id": "21",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img21.png",
       "character_name": "Tobi",
       "character_desc": "Tobi is an exceptional hurdler. With lightning speed and impeccable technique, Tobi dominates the track",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3248,
+      "character_activeusers": 735
     },
     {
       "character_id": "22",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img22.png",
       "character_name": "Bakhodir",
       "character_desc": "Bakhodir is a strong and resilient character. With his impressive strength and courage, Bakhodir faces challenges head-on",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4820,
+      "character_activeusers": 1227
     },
     {
       "character_id": "23",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img23.png",
       "character_name": "Archy",
       "character_desc": "Archy is a skilled archer, known for his precision and calm demeanor. Always carrying his trusted bow, he hits targets with unparalleled accuracy and grace",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3745,
+      "character_activeusers": 836
     },
     {
       "character_id": "24",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img24.png",
       "character_name": "Swimmy",
       "character_desc": "Swimmy is an expert swimmer who feels at home in the water. Fast and agile, Swimmy glides through pools, lakes, and oceans always aiming for the gold",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4302,
+      "character_activeusers": 973
     },
     {
       "character_id": "25",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img25.png",
       "character_name": "Footy",
       "character_desc": "Footy is a footballer with incredible dribbling skills and a powerful kick. Footy is the star player of any match, leading his team to victory",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 2874,
+      "character_activeusers": 1289
     },
     {
       "character_id": "26",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img26.png",
       "character_name": "Flexy",
       "character_desc": "Flexy is a master of calisthenics, showcasing impressive flexibility and strength. With a body that moves like a spring",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4910,
+      "character_activeusers": 687
     },
     {
       "character_id": "27",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img27.png",
       "character_name": "Volley",
       "character_desc": "Volley is a volleyball expert, known for powerful spikes and precise serves. Quick on their feet, Volley is the backbone of their team",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 2563,
+      "character_activeusers": 1054
     },
     {
       "character_id": "28",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img28.png",
       "character_name": "Воху",
       "character_desc": "Boxy is a formidable boxer, known for swift punches and agile footwork. In the ring, Boxy is a force to be reckoned with, always aiming for the knockout",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3107,
+      "character_activeusers": 844
     },
     {
       "character_id": "29",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img29.png",
       "character_name": "Gunslinger",
       "character_desc": "Gunslinger is the one who proved Enzo Ferrari wrong",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4773,
+      "character_activeusers": 1401
     },
     {
       "character_id": "30",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img30.png",
       "character_name": "Crypty",
       "character_desc": "Crypty ensures no one's identity is exposed. Crypty keeps sensitive information safe and protects against prying eyes, guaranteeing that privacy and anonymity are never ",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3895,
+      "character_activeusers": 1176
     },
     {
       "character_id": "31",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img31.png",
       "character_name": "Snoopy",
       "character_desc": "A cool hamster with a light attitude towards the world, reads rap, solves problems",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3897,
+      "character_activeusers": 1245
     },
     {
       "character_id": "32",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img32.png",
       "character_name": "Firy",
       "character_desc": "A fire-breathing winged hamster with a difficult character",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4723,
+      "character_activeusers": 867
     },
     {
       "character_id": "33",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img33.png",
       "character_name": "Xenomorfy",
       "character_desc": "An alien hamster, science knows little about him",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3189,
+      "character_activeusers": 932
     },
     {
       "character_id": "34",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img34.png",
       "character_name": "Exchange Enforcer",
       "character_desc": "Trained in the depths of high-frequency trading systems, The Exchange Enforcer uses his skills to bring transparency and fairness to the financial world. His speed and precision make him a formidable opponent to any who try to manipulate the market",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4452,
+      "character_activeusers": 1032
     },
     {
       "character_id": "35",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img35.png",
       "character_name": "Margin Master",
       "character_desc": "Born from the high-risk, high-reward world of leveraged trading, The Margin Master learned to calculate risk to perfection. His mission is to teach others the balance of risk, reward, and responsibility",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4983,
+      "character_activeusers": 756
     },
     {
       "character_id": "36",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img36.png",
       "character_name": "Crypto Sentinel",
       "character_desc": "Emerging from the heart of the most secure financial system, Crypto Sentinel mission is to ensure fairness and accessibility in global digital finance. His keen insights prevent cyber-attacks and safeguard assets on a global scale",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3910,
+      "character_activeusers": 1294
     },
     {
       "character_id": "37",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img37.png",
       "character_name": "Guardian of Innovation",
       "character_desc": "A Guardian of Innovation from the world of enterprise blockchain innovation, he rose to prominence by developing systems that secure financial data while ensuring maximum efficiency. His innovation protects against stagnation in an ever-evolving landscape",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4227,
+      "character_activeusers": 874
     },
     {
       "character_id": "38",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img38.png",
       "character_name": "Decentralizer",
       "character_desc": "Once part of a centralized financial institution, The Decentralizer realized that true power comes from giving individuals control. Now, he champions the cause of decentralization, using his abilities to level the playing field and bring financial freedom to everyone",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 3578,
+      "character_activeusers": 647
     },
     {
       "character_id": "39",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img39.png",
       "character_name": "Whisperer",
       "character_desc": "Operating from the shadows of secure communication platforms, The Whisperer ensures that digital transactions remain private and secure. He aids those seeking financial independence while thwarting malicious actors who threaten privacy",
-      "character_reward": "1"
+      "character_reward": "1",
+      "character_like": 4013,
+      "character_activeusers": 1098
     }
   ]
 }
