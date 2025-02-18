@@ -41,6 +41,34 @@
       "month3": "546",
       "month6": "947",
       "month12": "1457"
+    },
+    {
+      "speed": "70",
+      "key": "70xsubscribe",
+      "month3": "643",
+      "month6": "1114",
+      "month12": "1714"
+    },
+    {
+      "speed": "80",
+      "key": "80xsubscribe",
+      "month3": "761",
+      "month6": "1319",
+      "month12": "2029"
+    },
+    {
+      "speed": "90",
+      "key": "90xsubscribe",
+      "month3": "846",
+      "month6": "1467",
+      "month12": "2257"
+    },
+    {
+      "speed": "100",
+      "key": "100xsubscribe",
+      "month3": "1061",
+      "month6": "1839",
+      "month12": "2829"
     }
   ],
   "1Month": {
