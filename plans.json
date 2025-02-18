@@ -77,38 +77,38 @@
     "plans": [
       {
         "speed": "10",
-        "key": "5xspeed1month",
-        "month3": "612",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$55",
+        "month3": "134",
+        "month6": "244",
+        "month12": "428"
       },
       {
         "speed": "20",
-        "key": "10xspeed1month",
-        "month3": "612",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$105",
+        "month3": "257",
+        "month6": "467",
+        "month12": "817"
       },
       {
         "speed": "30",
-        "key": "30xspeed1month",
-        "month3": "612",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$155",
+        "month3": "379",
+        "month6": "689",
+        "month12": "1206"
       },
       {
         "speed": "40",
-        "key": "40xspeed1month",
-        "month3": "612",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$180",
+        "month3": "440",
+        "month6": "800",
+        "month12": "1400"
       },
       {
         "speed": "50",
-        "key": "50xspeed1month",
-        "month3": "612",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$200",
+        "month3": "489",
+        "month6": "889",
+        "month12": "1556"
       }
     ]
   },
@@ -118,33 +118,33 @@
     "plans": [
       {
         "speed": "10",
-        "key": "5xspeed3month",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$134",
+        "month6": "244",
+        "month12": "428"
       },
       {
         "speed": "20",
-        "key": "10xspeed3month",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$257",
+        "month6": "467",
+        "month12": "817"
       },
       {
         "speed": "30",
-        "key": "$496",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$379",
+        "month6": "689",
+        "month12": "1206"
       },
       {
         "speed": "40",
-        "key": "$576",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$440",
+        "month6": "800",
+        "month12": "1400"
       },
       {
         "speed": "50",
-        "key": "$640",
-        "month6": "1060",
-        "month12": "1632"
+        "key": "$489",
+        "month6": "889",
+        "month12": "1556"
       }
     ]
   },
@@ -154,28 +154,28 @@
     "plans": [
       {
         "speed": "10",
-        "key": "5xspeed6month",
-        "month12": "1632"
+        "key": "$244",
+        "month12": "428"
       },
       {
         "speed": "20",
-        "key": "$672",
-        "month12": "1632"
+        "key": "$467",
+        "month12": "817"
       },
       {
         "speed": "30",
-        "key": "$992",
-        "month12": "1632"
+        "key": "$689",
+        "month12": "1206"
       },
       {
         "speed": "40",
-        "key": "$1152",
-        "month12": "1632"
+        "key": "$800",
+        "month12": "1400"
       },
       {
         "speed": "50",
-        "key": "$1280",
-        "month12": "1632"
+        "key": "$889",
+        "month12": "1556"
       }
     ]
   },
@@ -185,23 +185,23 @@
     "plans": [
       {
         "speed": "10",
-        "key": "$704"
+        "key": "$428"
       },
       {
         "speed": "20",
-        "key": "$1344"
+        "key": "$817"
       },
       {
         "speed": "30",
-        "key": "$1984"
+        "key": "$1206"
       },
       {
         "speed": "40",
-        "key": "$2304"
+        "key": "$1400"
       },
       {
         "speed": "50",
-        "key": "$2560"
+        "key": "$1556"
       }
     ]
   }
