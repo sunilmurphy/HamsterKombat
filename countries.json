@@ -23,6 +23,10 @@
     {
       "flag": "https://sunilmurphy.github.io/HamsterKombat/france.png",
       "name": "France"
+    },
+    {
+      "flag": "https://sunilmurphy.github.io/HamsterKombat/allworld.png",
+      "name": "Other"
     }
   ]
 }
