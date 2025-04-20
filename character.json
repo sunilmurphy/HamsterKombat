@@ -193,7 +193,7 @@
       "character_id": "23",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img23.png",
       "character_name": "Archy",
-      "character_desc": "Archy is a skilled archer, known for his precision and calm demeanor. Always carrying his trusted bow, he hits targets with unparalleled accuracy and grace",
+      "character_desc": "Archy is a skilled archer, known for his precision and calm demeanor. Always carrying his trusted bow",
       "character_reward": "1",
       "character_like": 3745,
       "character_activeusers": 836
@@ -202,7 +202,7 @@
       "character_id": "24",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img24.png",
       "character_name": "Swimmy",
-      "character_desc": "Swimmy is an expert swimmer who feels at home in the water. Fast and agile, Swimmy glides through pools, lakes, and oceans always aiming for the gold",
+      "character_desc": "Swimmy is an expert swimmer who feels at home in the water. Fast and agile, Swimmy glides through pools",
       "character_reward": "1",
       "character_like": 4302,
       "character_activeusers": 973
@@ -211,7 +211,7 @@
       "character_id": "25",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img25.png",
       "character_name": "Footy",
-      "character_desc": "Footy is a footballer with incredible dribbling skills and a powerful kick. Footy is the star player of any match, leading his team to victory",
+      "character_desc": "Footy is a footballer with incredible dribbling skills and a powerful kick. Footy is the star player of any match",
       "character_reward": "1",
       "character_like": 2874,
       "character_activeusers": 1289
@@ -229,7 +229,7 @@
       "character_id": "27",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img27.png",
       "character_name": "Volley",
-      "character_desc": "Volley is a volleyball expert, known for powerful spikes and precise serves. Quick on their feet, Volley is the backbone of their team",
+      "character_desc": "Volley is a volleyball expert, known for powerful spikes and precise serves. Quick on their feet.",
       "character_reward": "1",
       "character_like": 2563,
       "character_activeusers": 1054
@@ -238,7 +238,7 @@
       "character_id": "28",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img28.png",
       "character_name": "Воху",
-      "character_desc": "Boxy is a formidable boxer, known for swift punches and agile footwork. In the ring, Boxy is a force to be reckoned with, always aiming for the knockout",
+      "character_desc": "Boxy is a formidable boxer, known for swift punches and agile footwork. In the ring, Boxy is a force to be reckoned",
       "character_reward": "1",
       "character_like": 3107,
       "character_activeusers": 844
@@ -256,7 +256,7 @@
       "character_id": "30",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img30.png",
       "character_name": "Crypty",
-      "character_desc": "Crypty ensures no one's identity is exposed. Crypty keeps sensitive information safe and protects against prying eyes, guaranteeing that privacy and anonymity are never ",
+      "character_desc": "Crypty ensures no one's identity is exposed. Crypty keeps sensitive information safe and protects against prying eyes",
       "character_reward": "1",
       "character_like": 3895,
       "character_activeusers": 1176
@@ -292,7 +292,7 @@
       "character_id": "34",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img34.png",
       "character_name": "Exchange Enforcer",
-      "character_desc": "Trained in the depths of high-frequency trading systems, The Exchange Enforcer uses his skills to bring transparency and fairness to the financial world. His speed and precision make him a formidable opponent to any who try to manipulate the market",
+      "character_desc": "Trained in the depths of high-frequency trading systems, The Exchange Enforcer uses his skills to bring transparency and fairness to the financial world.",
       "character_reward": "1",
       "character_like": 4452,
       "character_activeusers": 1032
@@ -301,7 +301,7 @@
       "character_id": "35",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img35.png",
       "character_name": "Margin Master",
-      "character_desc": "Born from the high-risk, high-reward world of leveraged trading, The Margin Master learned to calculate risk to perfection. His mission is to teach others the balance of risk, reward, and responsibility",
+      "character_desc": "Born from the high-risk, high-reward world of leveraged trading, The Margin Master learned to calculate risk to perfection.",
       "character_reward": "1",
       "character_like": 4983,
       "character_activeusers": 756
@@ -310,7 +310,7 @@
       "character_id": "36",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img36.png",
       "character_name": "Crypto Sentinel",
-      "character_desc": "Emerging from the heart of the most secure financial system, Crypto Sentinel mission is to ensure fairness and accessibility in global digital finance. His keen insights prevent cyber-attacks and safeguard assets on a global scale",
+      "character_desc": "Emerging from the heart of the most secure financial system, Crypto Sentinel mission is to ensure fairness and accessibility in global digital finance.",
       "character_reward": "1",
       "character_like": 3910,
       "character_activeusers": 1294
@@ -319,7 +319,7 @@
       "character_id": "37",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img37.png",
       "character_name": "Guardian of Innovation",
-      "character_desc": "A Guardian of Innovation from the world of enterprise blockchain innovation, he rose to prominence by developing systems that secure financial data while ensuring maximum efficiency. His innovation protects against stagnation in an ever-evolving landscape",
+      "character_desc": "A Guardian of Innovation from the world of enterprise blockchain innovation, he rose to prominence by developing systems that secure financial data while ensuring maximum efficiency.",
       "character_reward": "1",
       "character_like": 4227,
       "character_activeusers": 874
@@ -328,7 +328,7 @@
       "character_id": "38",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img38.png",
       "character_name": "Decentralizer",
-      "character_desc": "Once part of a centralized financial institution, The Decentralizer realized that true power comes from giving individuals control. Now, he champions the cause of decentralization, using his abilities to level the playing field and bring financial freedom to everyone",
+      "character_desc": "Once part of a centralized financial institution, The Decentralizer realized that true power comes from giving individuals control.",
       "character_reward": "1",
       "character_like": 3578,
       "character_activeusers": 647
@@ -337,7 +337,7 @@
       "character_id": "39",
       "character_img": "https://sunilmurphy.github.io/HamsterKombat/hmster_img39.png",
       "character_name": "Whisperer",
-      "character_desc": "Operating from the shadows of secure communication platforms, The Whisperer ensures that digital transactions remain private and secure. He aids those seeking financial independence while thwarting malicious actors who threaten privacy",
+      "character_desc": "Operating from the shadows of secure communication platforms, The Whisperer ensures that digital transactions remain private and secure.",
       "character_reward": "1",
       "character_like": 4013,
       "character_activeusers": 1098
