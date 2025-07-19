@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Binance",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_bin.png",
+    "tutorial": "https://www.youtube.com/watch?v=fmkXluu-wV8&t=11s",
+    "affiliate": "https://accounts.binance.com/en/register?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vZW4vZXZlbnRzL2FmZmlsaWF0ZQ%3D%3D"
+  },
+  {
+    "title": "OKX",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_okx.png",
+    "tutorial": "",
+    "affiliate": ""
+  },
+  {
+    "title": "Crypto.com",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_ctx.png",
+    "tutorial": "",
+    "affiliate": ""
+  },
+  {
+    "title": "Bybit",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_bbt.png",
+    "tutorial": "",
+    "affiliate": ""
+  },
+  {
+    "title": "BingX",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_bx.png",
+    "tutorial": "",
+    "affiliate": ""
+  },
+  {
+    "title": "HTX",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_htx.png",
+    "tutorial": "",
+    "affiliate": ""
+  },
+  {
+    "title": "Kucoin",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_kucoin.png",
+    "tutorial": "",
+    "affiliate": ""
+  },
+  {
+    "title": "Gate.io",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_gio.png",
+    "tutorial": "",
+    "affiliate": ""
+  },
+  {
+    "title": "MEXC",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_mxc.png",
+    "tutorial": "",
+    "affiliate": ""
+  },
+  {
+    "title": "Bitget",
+    "image": "https://sunilmurphy.github.io/HamsterKombat/iv_bget.png",
+    "tutorial": "",
+    "affiliate": ""
+  }
+]
