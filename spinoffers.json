@@ -3,30 +3,48 @@
     {
       "title": "Get 1000 Bonus Coins on Bitget",
       "type": "affiliate",
-      "url": "https://bitget.com/ref123"
+      "url": "https://bitget.com/ref123",
+      "icon_url": "https://yourcdn.com/icons/bitget.png",
+      "bg_color": "#4CAF50",
+      "text_color": "#FFFFFF"
     },
     {
       "title": "Claim Bonus: Signup on CoinDCX",
       "type": "affiliate",
-      "url": "https://coindcx.com/referral123"
+      "url": "https://coindcx.com/referral123",
+      "icon_url": "https://yourcdn.com/icons/coindcx.png",
+      "bg_color": "#3F51B5",
+      "text_color": "#FFFFFF"
     },
     {
       "title": "Win 500 Coins – Complete a Survey",
       "type": "survey",
-      "url": "https://theoremreach.com/survey/start?api_key=YOUR_API&user_id=xyz"
+      "url": "https://theoremreach.com/survey/start?api_key=YOUR_API&user_id=xyz",
+      "icon_url": "https://yourcdn.com/icons/survey.png",
+      "bg_color": "#FFC107",
+      "text_color": "#000000"
     },
     {
       "title": "Sorry, Try Again!",
-      "type": "empty"
+      "type": "empty",
+      "icon_url": "https://yourcdn.com/icons/sad.png",
+      "bg_color": "#E91E63",
+      "text_color": "#FFFFFF"
     },
     {
       "title": "Install Wallet – Get Reward",
       "type": "affiliate",
-      "url": "https://somewallet.com/aff123"
+      "url": "https://somewallet.com/aff123",
+      "icon_url": "https://yourcdn.com/icons/wallet.png",
+      "bg_color": "#009688",
+      "text_color": "#FFFFFF"
     },
     {
       "title": "Oops! No reward this time.",
-      "type": "empty"
+      "type": "empty",
+      "icon_url": "https://yourcdn.com/icons/try-again.png",
+      "bg_color": "#9E9E9E",
+      "text_color": "#000000"
     }
   ]
 }
