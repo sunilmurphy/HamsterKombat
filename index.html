@@ -3,59 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🎰 Casino Offers</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1>🎰 Casino Offers</h1>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper" id="offersContainer">Loading...</div>
-  </div>
-
-  <p class="note">🔞 18+ only. For entertainment. Play responsibly.</p>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    async function fetchOffers() {
-      const userData = await fetch("https://ipapi.co/json").then(res => res.json()).catch(() => ({ country_code: 'GLOBAL' }));
-      const userCountry = userData.country_code || "GLOBAL";
-
-      const response = await fetch("offers.json");
-      const offers = await response.json();
-
-      const visibleOffers = offers.filter(o => o.country === "GLOBAL" || o.country === userCountry);
-      const container = document.getElementById("offersContainer");
-      container.innerHTML = '';
-
-      visibleOffers.forEach(offer => {
-        const trackingUrl = `${offer.url}?ref=affiliate123&utm_country=${userCountry}&utm_campaign=casino`;
-
-        const flag = offer.country === "GLOBAL"
-          ? '🌐'
-          : `<img src="https://flagcdn.com/24x18/${offer.country.toLowerCase()}.png" alt="${offer.country}" />`;
-
-        container.innerHTML += `
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="${offer.img}" alt="${offer.title}" class="offer-img" />
-              <h3>${offer.title}</h3>
-              <p class="flag">${flag} ${offer.country === userCountry ? 'Available in your country' : 'Global Offer'}</p>
-              <a href="${trackingUrl}" target="_blank">Play Now</a>
-            </div>
-          </div>
-        `;
-      });
-
-      new Swiper(".mySwiper", {
-        slidesPerView: 1.2,
-        spaceBetween: 15,
-        centeredSlides: true,
-        loop: true
-      });
+  <title>🎰 Casino Bonus Zone</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
     }
 
-    fetchOffers();
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #ff0057, #7700ff);
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .live-count {
+      font-size: 16px;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    .swiper {
+      padding: 30px 10px;
+    }
+
+    .swiper-slide {
+      background: #1b1b1b;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .swiper-slide:hover {
+      transform: scale(1.05);
+    }
+
+    .swiper-slide img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+    }
+
+    .offer-title {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .flag {
+      width: 24px;
+      height: 16px;
+      margin-top: 5px;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      padding: 20px;
+    }
+
+    #exitModal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #exitModal .modal-box {
+      background: #222;
+      color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      animation: fadeIn 0.4s ease;
+    }
+
+    #exitModal button {
+      background: #ff0057;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎰 Casino Bonus Offers</h1>
+    <div class="live-count">🔴 Live Users: <span id="userCount"></span></div>
+  </header>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper" id="offersContainer">
+      <!-- Offers load here -->
+    </div>
+  </div>
+
+  <p class="note">18+ only. Play responsibly. For entertainment purposes only.</p>
+
+  <div id="exitModal">
+    <div class="modal-box">
+      <h2>Wait! 🎁</h2>
+      <p>Before you leave, check out exclusive casino bonuses waiting for you!</p>
+      <button onclick="document.getElementById('exitModal').style.display='none'">Okay!</button>
+    </div>
+  </div>
+
+  <!-- SwiperJS + Firebase -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_DOMAIN",
+      projectId: "YOUR_PROJECT",
+      appId: "YOUR_APP_ID",
+      measurementId: "YOUR_MEASUREMENT_ID"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    logEvent(analytics, "page_view");
+  </script>
+
+  <script>
+    // Offers list (you can replace this with a JSON API call)
+    const offers = [
+      {
+        title: "Coin Casino",
+        img: "https://pbs.twimg.com/profile_images/1879916699857858560/TgEvSAhI_400x400.jpg",
+        url: "https://coincasino.com?ref=1",
+        country: "IN"
+      },
+      {
+        title: "USA Spins Club",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Slot_machine_icon.svg/1024px-Slot_machine_icon.svg.png",
+        url: "https://usaspins.com?ref=2",
+        country: "US"
+      },
+      {
+        title: "World Casino",
+        img: "https://cdn-icons-png.flaticon.com/512/565/565547.png",
+        url: "https://worldcasino.com?ref=3",
+        country: "GLOBAL"
+      }
+    ];
+
+    // Get user country and show matching offers
+    fetch("https://ipapi.co/json")
+      .then(res => res.json())
+      .then(data => {
+        const userCountry = data.country_code;
+        const container = document.getElementById("offersContainer");
+
+        const visibleOffers = offers.filter(
+          o => o.country === "GLOBAL" || o.country === userCountry
+        );
+
+        container.innerHTML = visibleOffers.map(o => `
+          <div class="swiper-slide">
+            <a href="${o.url}" target="_blank">
+              <img src="${o.img}" alt="${o.title}" />
+              <div class="offer-title">${o.title}</div>
+              <img class="flag" src="https://flagcdn.com/24x18/${o.country.toLowerCase()}.png" alt="flag" />
+            </a>
+          </div>
+        `).join("");
+
+        new Swiper(".mySwiper", {
+          slidesPerView: 1.2,
+          spaceBetween: 15,
+          freeMode: true,
+          grabCursor: true,
+          loop: true
+        });
+      });
+
+    // Live user count (simulate)
+    const liveCount = document.getElementById("userCount");
+    setInterval(() => {
+      const randomCount = Math.floor(50000 + Math.random() * 450000);
+      liveCount.textContent = randomCount.toLocaleString();
+    }, 3000);
+
+    // Exit-intent modal
+    let exitShown = false;
+    document.addEventListener("mouseleave", e => {
+      if (!exitShown && e.clientY < 10) {
+        document.getElementById("exitModal").style.display = "flex";
+        exitShown = true;
+      }
+    });
+
+    // Firebase tracking user duration
+    let startTime = Date.now();
+    window.addEventListener("beforeunload", () => {
+      const duration = Math.floor((Date.now() - startTime) / 1000);
+      if (typeof logEvent === "function") {
+        logEvent(analytics, "user_duration", { seconds: duration });
+      }
+    });
   </script>
 </body>
 </html>
