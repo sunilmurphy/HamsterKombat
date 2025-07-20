@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Coin Casino India",
+    "img": "https://pbs.twimg.com/profile_images/1879916699857858560/TgEvSAhI_400x400.jpg",
+    "base_url": "https://www.coincasino.com/en/promotions?affiliateid=indiaOffer",
+    "country": "IN"
+  },
+  {
+    "title": "Coin Casino USA",
+    "img": "https://pbs.twimg.com/profile_images/1879916699857858560/TgEvSAhI_400x400.jpg",
+    "base_url": "https://www.coincasino.com/en/promotions?affiliateid=usaOffer",
+    "country": "US"
+  },
+  {
+    "title": "Coin Casino Global",
+    "img": "https://pbs.twimg.com/profile_images/1879916699857858560/TgEvSAhI_400x400.jpg",
+    "base_url": "https://www.coincasino.com/en/promotions?affiliateid=globalOffer",
+    "country": "GLOBAL"
+  }
+]
