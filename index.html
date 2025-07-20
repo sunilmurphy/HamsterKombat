@@ -200,7 +200,7 @@
           `;
           div.addEventListener("click", () => {
             analytics.logEvent("offer_click", { title: offer.title, url: offer.url });
-            window.open(offer.url, "_blank");
+            location.href = offer.url;
           });
           container.appendChild(div);
         });
