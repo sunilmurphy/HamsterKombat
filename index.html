@@ -3,229 +3,215 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🎰 Casino Bonus Zone</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <title>🎰 Casino Offers</title>
   <style>
     body {
-      margin: 0;
-      background: #0f0f0f;
-      color: #fff;
+      margin: 0; padding: 0;
+      background: #0b0b0b; color: #fff;
       font-family: 'Segoe UI', sans-serif;
-      overflow-x: hidden;
     }
-
     header {
-      text-align: center;
       padding: 20px;
-      background: linear-gradient(to right, #ff0057, #7700ff);
-      color: #fff;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin: 0;
-    }
-
-    .live-count {
-      font-size: 16px;
-      margin-top: 10px;
-      opacity: 0.8;
-    }
-
-    .swiper {
-      padding: 30px 10px;
-    }
-
-    .swiper-slide {
-      background: #1b1b1b;
-      border-radius: 10px;
-      padding: 15px;
+      background: #1a1a1a;
       text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      color: #00ffcc;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 2px 10px #000;
     }
-
-    .swiper-slide:hover {
-      transform: scale(1.05);
-    }
-
-    .swiper-slide img {
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-    }
-
-    .offer-title {
-      margin-top: 10px;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .flag {
-      width: 24px;
-      height: 16px;
+    .live-count {
+      text-align: center;
+      color: #888;
       margin-top: 5px;
+      font-size: 14px;
     }
-
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .offer {
+      background: #1f1f1f;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .offer:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #00ffcc66;
+    }
+    .offer img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+    .offer-title {
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+      color: #00ffcc;
+    }
     .note {
       text-align: center;
-      font-size: 12px;
       color: #888;
-      padding: 20px;
+      font-size: 13px;
+      padding: 10px 0 20px;
     }
-
-    #exitModal {
-      display: none;
+    /* Exit Modal */
+    .modal {
       position: fixed;
-      inset: 0;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
       background: rgba(0,0,0,0.8);
+      display: none;
       justify-content: center;
       align-items: center;
       z-index: 9999;
     }
-
-    #exitModal .modal-box {
+    .modal-content {
       background: #222;
-      color: #fff;
       padding: 30px;
-      border-radius: 10px;
+      border-radius: 12px;
       text-align: center;
-      animation: fadeIn 0.4s ease;
-    }
-
-    #exitModal button {
-      background: #ff0057;
       color: #fff;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 20px;
-      border-radius: 5px;
-      cursor: pointer;
+      max-width: 300px;
+      box-shadow: 0 0 15px #00ffcc55;
     }
-
-    @keyframes fadeIn {
-      from { transform: scale(0.95); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
+    .modal-content button {
+      margin-top: 20px;
+      padding: 8px 16px;
+      border: none;
+      background: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🎰 Casino Bonus Offers</h1>
-    <div class="live-count">🔴 Live Users: <span id="userCount"></span></div>
-  </header>
-
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper" id="offersContainer">
-      <!-- Offers load here -->
-    </div>
-  </div>
-
+  <header>🎲 Casino Game Offers</header>
+  <div class="live-count">🔥 Live Users: <span id="liveUsers">...</span></div>
+  <div class="offers-grid" id="offersContainer">Loading offers...</div>
   <p class="note">18+ only. Play responsibly. For entertainment purposes only.</p>
 
-  <div id="exitModal">
-    <div class="modal-box">
-      <h2>Wait! 🎁</h2>
-      <p>Before you leave, check out exclusive casino bonuses waiting for you!</p>
-      <button onclick="document.getElementById('exitModal').style.display='none'">Okay!</button>
+  <!-- Exit Modal -->
+  <div class="modal" id="exitModal">
+    <div class="modal-content">
+      <h3>Wait! 🎁</h3>
+      <p>Don’t miss these exclusive bonus offers before you go!</p>
+      <button onclick="closeModal()">Keep Playing</button>
     </div>
   </div>
 
-  <!-- SwiperJS + Firebase -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-    import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+  <script>
     const firebaseConfig = {
       apiKey: "YOUR_API_KEY",
       authDomain: "YOUR_DOMAIN",
-      projectId: "YOUR_PROJECT",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_BUCKET",
+      messagingSenderId: "YOUR_SENDER_ID",
       appId: "YOUR_APP_ID",
       measurementId: "YOUR_MEASUREMENT_ID"
     };
-
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    logEvent(analytics, "page_view");
+    firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics();
   </script>
 
   <script>
-    // Offers list (you can replace this with a JSON API call)
     const offers = [
       {
         title: "Coin Casino",
         img: "https://pbs.twimg.com/profile_images/1879916699857858560/TgEvSAhI_400x400.jpg",
-        url: "https://coincasino.com?ref=1",
+        url: "https://coincasino.com/?ref=123&utm_campaign=web",
+        country: "GLOBAL"
+      },
+      {
+        title: "Lucky Spin",
+        img: "https://cdn.pixabay.com/photo/2016/04/01/09/30/casino-1298634_1280.png",
+        url: "https://luckyspin.com/?ref=123&utm_campaign=web",
         country: "IN"
       },
       {
-        title: "USA Spins Club",
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Slot_machine_icon.svg/1024px-Slot_machine_icon.svg.png",
-        url: "https://usaspins.com?ref=2",
+        title: "Mega Slots",
+        img: "https://cdn.pixabay.com/photo/2017/01/14/12/59/slot-1975068_1280.jpg",
+        url: "https://megaslots.com/?ref=123&utm_campaign=web",
         country: "US"
-      },
-      {
-        title: "World Casino",
-        img: "https://cdn-icons-png.flaticon.com/512/565/565547.png",
-        url: "https://worldcasino.com?ref=3",
-        country: "GLOBAL"
       }
     ];
 
-    // Get user country and show matching offers
+    const container = document.getElementById("offersContainer");
+
     fetch("https://ipapi.co/json")
       .then(res => res.json())
       .then(data => {
-        const userCountry = data.country_code;
-        const container = document.getElementById("offersContainer");
+        const userCountry = data.country_code || "IN";
+        console.log("User Country:", userCountry);
 
-        const visibleOffers = offers.filter(
-          o => o.country === "GLOBAL" || o.country === userCountry
+        const visibleOffers = offers.filter(offer =>
+          offer.country === "GLOBAL" || offer.country === userCountry
         );
 
-        container.innerHTML = visibleOffers.map(o => `
-          <div class="swiper-slide">
-            <a href="${o.url}" target="_blank">
-              <img src="${o.img}" alt="${o.title}" />
-              <div class="offer-title">${o.title}</div>
-              <img class="flag" src="https://flagcdn.com/24x18/${o.country.toLowerCase()}.png" alt="flag" />
-            </a>
-          </div>
-        `).join("");
-
-        new Swiper(".mySwiper", {
-          slidesPerView: 1.2,
-          spaceBetween: 15,
-          freeMode: true,
-          grabCursor: true,
-          loop: true
+        container.innerHTML = '';
+        visibleOffers.forEach(offer => {
+          const item = document.createElement("div");
+          item.className = "offer";
+          item.innerHTML = `
+            <img src="${offer.img}" alt="${offer.title}" />
+            <div class="offer-title">${offer.title}</div>
+          `;
+          item.onclick = () => {
+            analytics.logEvent('offer_click', {
+              offer_title: offer.title,
+              user_country: userCountry
+            });
+            window.open(offer.url, '_blank');
+          };
+          container.appendChild(item);
         });
+
+        if (visibleOffers.length === 0) {
+          container.innerHTML = '<p>No offers available for your region.</p>';
+        }
+
+        analytics.logEvent("offers_loaded", { country: userCountry });
+      })
+      .catch(err => {
+        console.error("Geo error:", err);
+        container.innerHTML = `<p>Error loading offers.</p>`;
       });
 
-    // Live user count (simulate)
-    const liveCount = document.getElementById("userCount");
-    setInterval(() => {
-      const randomCount = Math.floor(50000 + Math.random() * 450000);
-      liveCount.textContent = randomCount.toLocaleString();
-    }, 3000);
+    // Live user count
+    function updateLiveUsers() {
+      const count = Math.floor(Math.random() * 450000) + 50000;
+      document.getElementById("liveUsers").textContent = count.toLocaleString();
+    }
+    setInterval(updateLiveUsers, 3000);
+    updateLiveUsers();
 
-    // Exit-intent modal
-    let exitShown = false;
-    document.addEventListener("mouseleave", e => {
-      if (!exitShown && e.clientY < 10) {
+    // Exit intent modal
+    let modalShown = false;
+    document.addEventListener("mouseout", function (e) {
+      if (!modalShown && e.clientY < 10) {
         document.getElementById("exitModal").style.display = "flex";
-        exitShown = true;
+        modalShown = true;
+        analytics.logEvent("exit_modal_shown");
       }
     });
+    function closeModal() {
+      document.getElementById("exitModal").style.display = "none";
+    }
 
-    // Firebase tracking user duration
-    let startTime = Date.now();
+    // Track time on page
+    const startTime = Date.now();
     window.addEventListener("beforeunload", () => {
       const duration = Math.floor((Date.now() - startTime) / 1000);
-      if (typeof logEvent === "function") {
-        logEvent(analytics, "user_duration", { seconds: duration });
-      }
+      analytics.logEvent("time_spent", { seconds: duration });
     });
   </script>
 </body>
