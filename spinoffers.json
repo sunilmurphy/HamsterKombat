@@ -1,18 +1,18 @@
 {
   "offers": [
     {
-      "title": "Get 1000 Bonus Coins on Bitget",
+      "title": "Get 1000 Bonus Coins on Bybit",
       "type": "affiliate",
       "url": "https://bitget.com/ref123",
-      "icon_url": "https://yourcdn.com/icons/bitget.png",
+      "icon_url": "https://sunilmurphy.github.io/HamsterKombat/iv_bbt.png",
       "bg_color": "#4CAF50",
       "text_color": "#FFFFFF"
     },
     {
-      "title": "Claim Bonus: Signup on CoinDCX",
+      "title": "Claim Bonus: Signup on OKX",
       "type": "affiliate",
       "url": "https://coindcx.com/referral123",
-      "icon_url": "https://yourcdn.com/icons/coindcx.png",
+      "icon_url": "https://sunilmurphy.github.io/HamsterKombat/iv_okx.png",
       "bg_color": "#3F51B5",
       "text_color": "#FFFFFF"
     },
