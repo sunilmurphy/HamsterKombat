@@ -1,0 +1,32 @@
+{
+  "offers": [
+    {
+      "title": "Get 1000 Bonus Coins on Bitget",
+      "type": "affiliate",
+      "url": "https://bitget.com/ref123"
+    },
+    {
+      "title": "Claim Bonus: Signup on CoinDCX",
+      "type": "affiliate",
+      "url": "https://coindcx.com/referral123"
+    },
+    {
+      "title": "Win 500 Coins – Complete a Survey",
+      "type": "survey",
+      "url": "https://theoremreach.com/survey/start?api_key=YOUR_API&user_id=xyz"
+    },
+    {
+      "title": "Sorry, Try Again!",
+      "type": "empty"
+    },
+    {
+      "title": "Install Wallet – Get Reward",
+      "type": "affiliate",
+      "url": "https://somewallet.com/aff123"
+    },
+    {
+      "title": "Oops! No reward this time.",
+      "type": "empty"
+    }
+  ]
+}
