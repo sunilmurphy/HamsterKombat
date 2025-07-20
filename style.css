@@ -1,0 +1,48 @@
+body {
+  background: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+.note {
+  font-size: 14px;
+  text-align: center;
+  color: #888;
+  margin-top: 30px;
+}
+.card {
+  background: #1e1e1e;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 8px #000;
+}
+.card h3 {
+  color: #00ffcc;
+  margin: 10px 0;
+}
+.card .offer-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #00ffcc;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.flag {
+  margin: 8px 0;
+  font-size: 14px;
+}
