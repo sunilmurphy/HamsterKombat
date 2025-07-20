@@ -3,106 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Geo Offers</title>
-  <style>
-    body {
-      background-color: #121212;
-      font-family: 'Segoe UI', sans-serif;
-      color: #fff;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #00ffcc;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .card {
-      background-color: #1e1e1e;
-      padding: 15px;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-    }
-    .card a {
-      display: block;
-      margin-top: 10px;
-      color: #00ffcc;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-    }
-    .note {
-      text-align: center;
-      color: #aaa;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-  </style>
+  <title>🎰 Casino Offers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <h1>🎰 Casino Offers</h1>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper" id="offersContainer">Loading...</div>
+  </div>
 
-  <h1>🌍 Country Offers</h1>
-  <div id="offersContainer" class="grid">Loading...</div>
+  <p class="note">🔞 18+ only. For entertainment. Play responsibly.</p>
 
-  <p class="note">18+ only. No real money handling. Offers open in external sites with affiliate links.</p>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    const container = document.getElementById("offersContainer");
+    async function fetchOffers() {
+      const userData = await fetch("https://ipapi.co/json").then(res => res.json()).catch(() => ({ country_code: 'GLOBAL' }));
+      const userCountry = userData.country_code || "GLOBAL";
 
-    // Fetch user country
-    fetch("https://ipapi.co/json")
-      .then(res => res.json())
-      .then(location => {
-        const userCountry = location.country_code || "GLOBAL";
-        loadOffers(userCountry);
-      })
-      .catch(err => {
-        console.error("Geo error:", err);
-        loadOffers("GLOBAL");
+      const response = await fetch("offers.json");
+      const offers = await response.json();
+
+      const visibleOffers = offers.filter(o => o.country === "GLOBAL" || o.country === userCountry);
+      const container = document.getElementById("offersContainer");
+      container.innerHTML = '';
+
+      visibleOffers.forEach(offer => {
+        const trackingUrl = `${offer.url}?ref=affiliate123&utm_country=${userCountry}&utm_campaign=casino`;
+
+        const flag = offer.country === "GLOBAL"
+          ? '🌐'
+          : `<img src="https://flagcdn.com/24x18/${offer.country.toLowerCase()}.png" alt="${offer.country}" />`;
+
+        container.innerHTML += `
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="${offer.img}" alt="${offer.title}" class="offer-img" />
+              <h3>${offer.title}</h3>
+              <p class="flag">${flag} ${offer.country === userCountry ? 'Available in your country' : 'Global Offer'}</p>
+              <a href="${trackingUrl}" target="_blank">Play Now</a>
+            </div>
+          </div>
+        `;
       });
 
-    function loadOffers(userCountry) {
-      fetch("offers.json")
-        .then(res => res.json())
-        .then(offers => {
-          const visibleOffers = offers.filter(o =>
-            o.country === "GLOBAL" || o.country === userCountry
-          );
-
-          if (visibleOffers.length === 0) {
-            container.innerHTML = `<p>No offers for your country.</p>`;
-            return;
-          }
-
-          container.innerHTML = "";
-          visibleOffers.forEach(offer => {
-            const trackingUrl = `${offer.base_url}&utm_source=casinoApp&utm_medium=web&utm_campaign=geoOffer&country=${userCountry}`;
-            container.innerHTML += `
-              <div class="card">
-                <img src="${offer.img}" alt="${offer.title}" />
-                <a href="${trackingUrl}" target="_blank">${offer.title}</a>
-              </div>
-            `;
-          });
-        })
-        .catch(() => {
-          container.innerHTML = `<p>Failed to load offers.</p>`;
-        });
+      new Swiper(".mySwiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 15,
+        centeredSlides: true,
+        loop: true
+      });
     }
-  </script>
 
+    fetchOffers();
+  </script>
 </body>
 </html>
