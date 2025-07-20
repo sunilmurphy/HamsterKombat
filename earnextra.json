@@ -2,39 +2,58 @@
     "earnextra":[
         {
             "earn_coin":100,
-            "earn_seconds":30
+            "earn_seconds":30,
+            "earn_redirect":"https://1105.go.mglgamez.com/pregames"
         },
         {
             "earn_coin":200,
-            "earn_seconds":45
+            "earn_seconds":45,
+            "earn_redirect":""
         },
         {
             "earn_coin":300,
-            "earn_seconds":60
+            "earn_seconds":60,
+            "earn_redirect":""
         },
         {
             "earn_coin":400,
-            "earn_seconds":75
+            "earn_seconds":75,
+            "earn_redirect":""
         },
         {
             "earn_coin":500,
-            "earn_seconds":90
+            "earn_seconds":90,
+            "earn_redirect":""
         },
         {
             "earn_coin":1000,
-            "earn_seconds":105
+            "earn_seconds":105,
+            "earn_redirect":""
         },
         {
             "earn_coin":2000,
-            "earn_seconds":120
+            "earn_seconds":120,
+            "earn_redirect":""
         },
         {
             "earn_coin":3000,
-            "earn_seconds":135
+            "earn_seconds":135,
+            "earn_redirect":""
         },
         {
             "earn_coin":5000,
-            "earn_seconds":150
+            "earn_seconds":150,
+            "earn_redirect":""
+        },
+        {
+            "earn_coin":7000,
+            "earn_seconds":175,
+            "earn_redirect":""
+        },
+        {
+            "earn_coin":10000,
+            "earn_seconds":200,
+            "earn_redirect":""
         }
     ]
 }
