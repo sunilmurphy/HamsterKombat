@@ -3,216 +3,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🎰 Casino Offers</title>
+  <title>Casino Offers</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
   <style>
     body {
-      margin: 0; padding: 0;
-      background: #0b0b0b; color: #fff;
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      overflow-x: hidden;
     }
+
     header {
-      padding: 20px;
-      background: #1a1a1a;
       text-align: center;
-      color: #00ffcc;
+      padding: 30px 20px 10px;
       font-size: 28px;
-      font-weight: bold;
-      box-shadow: 0 2px 10px #000;
+      color: #00ffc8;
+      letter-spacing: 1px;
     }
-    .live-count {
+
+    #liveUsers {
       text-align: center;
-      color: #888;
-      margin-top: 5px;
+      color: #999;
+      margin-bottom: 20px;
       font-size: 14px;
     }
-    .offers-grid {
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       gap: 20px;
       padding: 20px;
     }
-    .offer {
-      background: #1f1f1f;
+
+    .game {
+      background-color: #1f1f1f;
       border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 8px rgba(0, 255, 200, 0.2);
+      transition: transform 0.3s ease;
       cursor: pointer;
     }
-    .offer:hover {
+
+    .game:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 10px #00ffcc66;
     }
-    .offer img {
+
+    .game img {
       width: 100%;
       height: 120px;
       object-fit: cover;
     }
-    .offer-title {
+
+    .game-title {
       padding: 10px;
+      font-size: 15px;
       text-align: center;
-      font-size: 16px;
       color: #00ffcc;
     }
+
     .note {
-      text-align: center;
+      font-size: 12px;
       color: #888;
-      font-size: 13px;
-      padding: 10px 0 20px;
+      text-align: center;
+      margin: 30px 0;
     }
-    /* Exit Modal */
-    .modal {
+
+    /* Exit modal */
+    #exitModal {
       position: fixed;
       top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.8);
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
       display: none;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       z-index: 9999;
     }
+
     .modal-content {
       background: #222;
       padding: 30px;
       border-radius: 12px;
       text-align: center;
-      color: #fff;
       max-width: 300px;
-      box-shadow: 0 0 15px #00ffcc55;
+      color: #fff;
+      box-shadow: 0 0 10px #00ffc8;
     }
-    .modal-content button {
+
+    .modal-content h2 {
+      margin-bottom: 15px;
+      color: #00ffcc;
+    }
+
+    .close-btn {
       margin-top: 20px;
-      padding: 8px 16px;
-      border: none;
-      background: #00ffcc;
+      background: #00ffc8;
       color: #000;
-      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
       border-radius: 6px;
       cursor: pointer;
     }
   </style>
-</head>
-<body>
-  <header>🎲 Casino Game Offers</header>
-  <div class="live-count">🔥 Live Users: <span id="liveUsers">...</span></div>
-  <div class="offers-grid" id="offersContainer">Loading offers...</div>
-  <p class="note">18+ only. Play responsibly. For entertainment purposes only.</p>
-
-  <!-- Exit Modal -->
-  <div class="modal" id="exitModal">
-    <div class="modal-content">
-      <h3>Wait! 🎁</h3>
-      <p>Don’t miss these exclusive bonus offers before you go!</p>
-      <button onclick="closeModal()">Keep Playing</button>
-    </div>
-  </div>
-
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+</head>
+<body>
+
+  <header>🎰 Casino Offers</header>
+  <div id="liveUsers">Live Users: <span id="userCount"></span>+</div>
+  <div class="grid" id="offersContainer">Loading...</div>
+  <p class="note">18+ only. For entertainment purposes. Play responsibly.</p>
+
+  <!-- Exit Modal -->
+  <div id="exitModal">
+    <div class="modal-content">
+      <h2>Wait! 🎲</h2>
+      <p>Don't leave yet! You might miss out on exciting offers!</p>
+      <button class="close-btn" onclick="closeModal()">Continue</button>
+    </div>
+  </div>
+
   <script>
+    // Firebase config
     const firebaseConfig = {
       apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_DOMAIN",
+      authDomain: "YOUR_PROJECT.firebaseapp.com",
       projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_BUCKET",
-      messagingSenderId: "YOUR_SENDER_ID",
       appId: "YOUR_APP_ID",
-      measurementId: "YOUR_MEASUREMENT_ID"
+      measurementId: "G-XXXXXXXXX"
     };
     firebase.initializeApp(firebaseConfig);
     const analytics = firebase.analytics();
-  </script>
 
-  <script>
+    // Timer for time_spent
+    let startTime = Date.now();
+    window.addEventListener("beforeunload", () => {
+      const timeSpent = Math.round((Date.now() - startTime) / 1000);
+      analytics.logEvent("time_spent", { seconds: timeSpent });
+    });
+
+    // Offers data (You can replace this with fetch to JSON/API)
     const offers = [
       {
         title: "Coin Casino",
         img: "https://pbs.twimg.com/profile_images/1879916699857858560/TgEvSAhI_400x400.jpg",
-        url: "https://coincasino.com/?ref=123&utm_campaign=web",
+        url: "https://www.coincasino.com/en?aff=jGZUKO3JWgyVAv0U",
         country: "GLOBAL"
       },
       {
-        title: "Lucky Spin",
-        img: "https://cdn.pixabay.com/photo/2016/04/01/09/30/casino-1298634_1280.png",
-        url: "https://luckyspin.com/?ref=123&utm_campaign=web",
-        country: "IN"
-      },
-      {
-        title: "Mega Slots",
-        img: "https://cdn.pixabay.com/photo/2017/01/14/12/59/slot-1975068_1280.jpg",
-        url: "https://megaslots.com/?ref=123&utm_campaign=web",
-        country: "US"
+        title: "Mega Dice Bonus",
+        img: "https://cryptonews.com/images/mega-dice.webp",
+        url: "https://megadice.com/en?aff=xyz",
+        country: "GLOBAL"
       }
     ];
 
     const container = document.getElementById("offersContainer");
 
+    // IP-based country
     fetch("https://ipapi.co/json")
       .then(res => res.json())
       .then(data => {
-        const userCountry = data.country_code || "IN";
-        console.log("User Country:", userCountry);
+        const userCountry = data.country_code || "GLOBAL";
 
-        const visibleOffers = offers.filter(offer =>
-          offer.country === "GLOBAL" || offer.country === userCountry
+        const filteredOffers = offers.filter(
+          offer => offer.country === "GLOBAL" || offer.country === userCountry
         );
 
-        container.innerHTML = '';
-        visibleOffers.forEach(offer => {
-          const item = document.createElement("div");
-          item.className = "offer";
-          item.innerHTML = `
-            <img src="${offer.img}" alt="${offer.title}" />
-            <div class="offer-title">${offer.title}</div>
-          `;
-          item.onclick = () => {
-            analytics.logEvent('offer_click', {
-              offer_title: offer.title,
-              user_country: userCountry
-            });
-            window.open(offer.url, '_blank');
-          };
-          container.appendChild(item);
-        });
-
-        if (visibleOffers.length === 0) {
-          container.innerHTML = '<p>No offers available for your region.</p>';
+        if (filteredOffers.length === 0) {
+          container.innerHTML = `<p style="text-align:center;">No offers for your country.</p>`;
+          return;
         }
 
-        analytics.logEvent("offers_loaded", { country: userCountry });
-      })
-      .catch(err => {
-        console.error("Geo error:", err);
-        container.innerHTML = `<p>Error loading offers.</p>`;
+        container.innerHTML = '';
+        filteredOffers.forEach(offer => {
+          const div = document.createElement("div");
+          div.className = "game";
+          div.innerHTML = `
+            <img src="${offer.img}" alt="${offer.title}" />
+            <div class="game-title">${offer.title}</div>
+          `;
+          div.addEventListener("click", () => {
+            analytics.logEvent("offer_click", { title: offer.title, url: offer.url });
+            window.open(offer.url, "_blank");
+          });
+          container.appendChild(div);
+        });
       });
 
     // Live user count
-    function updateLiveUsers() {
-      const count = Math.floor(Math.random() * 450000) + 50000;
-      document.getElementById("liveUsers").textContent = count.toLocaleString();
-    }
-    setInterval(updateLiveUsers, 3000);
-    updateLiveUsers();
+    const userCount = Math.floor(Math.random() * (500000 - 50000 + 1)) + 50000;
+    document.getElementById("userCount").innerText = userCount.toLocaleString();
 
-    // Exit intent modal
+    // Exit intent popup
     let modalShown = false;
-    document.addEventListener("mouseout", function (e) {
+    document.addEventListener("mouseout", function(e) {
       if (!modalShown && e.clientY < 10) {
         document.getElementById("exitModal").style.display = "flex";
         modalShown = true;
-        analytics.logEvent("exit_modal_shown");
       }
     });
+
     function closeModal() {
       document.getElementById("exitModal").style.display = "none";
     }
-
-    // Track time on page
-    const startTime = Date.now();
-    window.addEventListener("beforeunload", () => {
-      const duration = Math.floor((Date.now() - startTime) / 1000);
-      analytics.logEvent("time_spent", { seconds: duration });
-    });
   </script>
 </body>
 </html>
