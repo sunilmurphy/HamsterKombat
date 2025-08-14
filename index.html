@@ -1,227 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Casino Offers</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <!-- Meta refresh fallback -->
+  <meta http-equiv="refresh" content="2; url=https://reffpa.com/L?tag=d_4154688m_97c_&site=4154688&ad=97&r=en/registration" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #121212;
-      color: #fff;
-      overflow-x: hidden;
-    }
-
-    header {
-      text-align: center;
-      padding: 30px 20px 10px;
-      font-size: 28px;
-      color: #00ffc8;
-      letter-spacing: 1px;
-    }
-
-    #liveUsers {
-      text-align: center;
-      color: #999;
-      margin-bottom: 20px;
-      font-size: 14px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .game {
-      background-color: #1f1f1f;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 0 8px rgba(0, 255, 200, 0.2);
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-
-    .game:hover {
-      transform: scale(1.05);
-    }
-
-    .game img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-    }
-
-    .game-title {
-      padding: 10px;
-      font-size: 15px;
-      text-align: center;
-      color: #00ffcc;
-    }
-
-    .note {
-      font-size: 12px;
-      color: #888;
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    /* Exit modal */
-    #exitModal {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.85);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-
-    .modal-content {
-      background: #222;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-      max-width: 300px;
-      color: #fff;
-      box-shadow: 0 0 10px #00ffc8;
-    }
-
-    .modal-content h2 {
-      margin-bottom: 15px;
-      color: #00ffcc;
-    }
-
-    .close-btn {
-      margin-top: 20px;
-      background: #00ffc8;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+    html,body{height:100%;margin:0}
+    body{display:flex;align-items:center;justify-content:center;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .box{max-width:640px;text-align:center;padding:24px}
+    .btn{display:inline-block;margin-top:12px;padding:12px 18px;border-radius:10px;border:1px solid #ddd;text-decoration:none}
   </style>
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
 </head>
 <body>
-
-  <header>🎰 Casino Offers</header>
-  <div id="liveUsers">Live Users: <span id="userCount"></span>+</div>
-  <div class="grid" id="offersContainer">Loading...</div>
-  <p class="note">18+ only. For entertainment purposes. Play responsibly.</p>
-
-  <!-- Exit Modal -->
-  <div id="exitModal">
-    <div class="modal-content">
-      <h2>Wait! 🎲</h2>
-      <p>Don't leave yet! You might miss out on exciting offers!</p>
-      <button class="close-btn" onclick="closeModal()">Continue</button>
-    </div>
+  <div class="box">
+    <h1>Loading…</h1>
+    <p>If you’re not redirected automatically, click below:</p>
+    <p><a id="manual" class="btn" href="https://reffpa.com/L?tag=d_4154688m_97c_&site=4154688&ad=97&r=en/registration" rel="noopener">Open Now</a></p>
   </div>
 
   <script>
-    // Firebase config
-    const firebaseConfig = {
-      apiKey: "AIzaSyBYjN0TRunsIqemSTPKVcOixjDvcKc0QyM",
-      authDomain: "hamster-mining-simulation-pro.firebaseapp.com",
-      projectId: "hamster-mining-simulation-pro",
-      appId: "1:516747050760:web:eb0a3ab3c6aba1ee4a36bd",
-      measurementId: "G-MN929BRYVP"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const analytics = firebase.analytics();
-
-    // Timer for time_spent
-    let startTime = Date.now();
-    window.addEventListener("beforeunload", () => {
-      const timeSpent = Math.round((Date.now() - startTime) / 1000);
-      analytics.logEvent("time_spent", { seconds: timeSpent });
-    });
-
-    // Offers data (You can replace this with fetch to JSON/API)
-    const offers = [
-      {
-        title: "Coin Casino",
-        img: "https://pbs.twimg.com/profile_images/1879916699857858560/TgEvSAhI_400x400.jpg",
-        url: "https://www.coincasino.com/en?aff=jGZUKO3JWgyVAv0U",
-        country: "IN"
-      },
-      {
-        title: "BetPanda",
-        img: "https://d3ec3n7kizfkuy.cloudfront.net/betpanda2/Main_a728350f56.svg",
-        url: "https://betpanda1.io/en/",
-        country: "US"
-      },
-      {
-        title: "BetPanda",
-        img: "https://d3ec3n7kizfkuy.cloudfront.net/betpanda2/Main_a728350f56.svg",
-        url: "https://betpanda1.io/en/",
-        country: "GLOBAL"
-      },
-      {
-        title: "BC Game",
-        img: "https://bcgame.top/assets/logo/logo.png",
-        url: "https://bcgame.top/?stag=8996_687cafb58b2f862812f7943e&spin=true&i=4cxse6dr&utm_source=4cxse6dr",
-        country: "GLOBAL"
-      }
-    ];
-
-    const container = document.getElementById("offersContainer");
-
-    // IP-based country
-    fetch("https://ipapi.co/json")
-      .then(res => res.json())
-      .then(data => {
-        const userCountry = data.country_code || "GLOBAL";
-
-        const filteredOffers = offers.filter(
-          offer => offer.country === "GLOBAL" || offer.country === userCountry
-        );
-
-        if (filteredOffers.length === 0) {
-          container.innerHTML = `<p style="text-align:center;">No offers for your country.</p>`;
-          return;
-        }
-
-        container.innerHTML = '';
-        filteredOffers.forEach(offer => {
-          const div = document.createElement("div");
-          div.className = "game";
-          div.innerHTML = `
-            <img src="${offer.img}" alt="${offer.title}" />
-            <div class="game-title">${offer.title}</div>
-          `;
-          div.addEventListener("click", () => {
-            analytics.logEvent("offer_click", { title: offer.title, url: offer.url });
-            location.href = offer.url;
-          });
-          container.appendChild(div);
-        });
-      });
-
-    // Live user count
-    const userCount = Math.floor(Math.random() * (500000 - 50000 + 1)) + 50000;
-    document.getElementById("userCount").innerText = userCount.toLocaleString();
-
-    // Exit intent popup
-    let modalShown = false;
-    document.addEventListener("mouseout", function(e) {
-      if (!modalShown && e.clientY < 10) {
-        document.getElementById("exitModal").style.display = "flex";
-        modalShown = true;
-      }
-    });
-
-    function closeModal() {
-      document.getElementById("exitModal").style.display = "none";
+    const target = "https://reffpa.com/L?tag=d_4154688m_97c_&site=4154688&ad=97&r=en/registration";
+    // Update manual link
+    document.getElementById("manual").href = target;
+    // Redirect immediately
+    try {
+      window.location.replace(target);
+    } catch {
+      window.location.href = target;
     }
+    // Safety net retry
+    setTimeout(() => {
+      try { window.location.replace(target); } catch { window.location.href = target; }
+    }, 1200);
   </script>
 </body>
 </html>
